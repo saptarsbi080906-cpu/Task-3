@@ -1,0 +1,44 @@
+   body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+
+    }
+    .stopwatch {
+      text-align: center;
+      font-family: 'Digital7', monospace;
+      border: 2px black solid;
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      border-radius: 50%;
+
+    }
+    #display {
+      font-size: 48px;
+      margin-top: 80px;
+      margin-bottom: 20px;
+      margin-left: 35px;
+      background-color: rgb(153, 140, 140);
+      color: rgb(255, 255, 255);
+      width: 250px;
+      border-radius: 10px;
+    }
+    button {
+      margin: 5px;
+      text-align: center;
+      border-radius: 50%;
+      cursor: pointer;
+      background: white;
+      border: blueviolet 1px solid;
+      color: purple;
+      height: 50px;
+      width: 50px;
+      font-size: 1.5rem;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
