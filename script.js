@@ -13,7 +13,7 @@
     function start() {
       if (!timer) {
         timer = setInterval(() => {
-          seconds++;
+          seconds ++;
           updateDisplay();
         }, 1000);
       }

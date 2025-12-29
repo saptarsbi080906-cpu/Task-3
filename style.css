@@ -1,44 +1,61 @@
-   body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e0e5ec; 
+}
 
-    }
-    .stopwatch {
-      text-align: center;
-      font-family: 'Digital7', monospace;
-      border: 2px black solid;
-      width: 320px;
-      display: flex;
-      flex-direction: column;
-      height: 300px;
-      border-radius: 50%;
+.stopwatch {
+  width: 320px;
+  height: 320px;
+  background-color: #e0e5ec;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 20px 20px 60px #bec3c9, -20px -20px 60px #ffffff;
+  border: 10px solid #e0e5ec;
+}
 
-    }
-    #display {
-      font-size: 48px;
-      margin-top: 80px;
-      margin-bottom: 20px;
-      margin-left: 35px;
-      background-color: rgb(153, 140, 140);
-      color: rgb(255, 255, 255);
-      width: 250px;
-      border-radius: 10px;
-    }
-    button {
-      margin: 5px;
-      text-align: center;
-      border-radius: 50%;
-      cursor: pointer;
-      background: white;
-      border: blueviolet 1px solid;
-      color: purple;
-      height: 50px;
-      width: 50px;
-      font-size: 1.5rem;
-    }
-    button:hover {
-      transform: scale(1.1);
-    }
+#display {
+  font-family: 'Digital7', 'Courier New', monospace;
+  font-size: 3rem;
+  color: #2d3436;
+  background: #cbd5e0;
+  padding: 15px 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: inset 6px 6px 12px #a3adb9, inset -6px -6px 12px #f3f7ff;
+  letter-spacing: 2px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background: #e0e5ec;
+  color: #4a4a4a;
+  transition: all 0.2s ease;
+  box-shadow: 6px 6px 12px #bec3c9, -6px -6px 12px #ffffff;
+}
+
+button:hover {
+  color: #6c5ce7;
+  transform: scale(1.05);
+}
+
+/* button:active {
+  box-shadow: inset 4px 4px 8px #bec3c9, inset -4px -4px 8px #ffffff;
+  transform: scale(0.98);
+} */
